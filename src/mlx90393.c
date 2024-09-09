@@ -9,7 +9,7 @@
  */
 
 #include <rtthread.h>
-#include <rtdevice.h>
+
 
 #include "mlx90393.h"
 

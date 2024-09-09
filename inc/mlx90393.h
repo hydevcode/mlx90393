@@ -12,6 +12,7 @@
 #define __MLX90393_H__
 
 #include <rtthread.h>
+#include <rtdevice.h>
 
 #define A0  0
 #define A1  0
@@ -67,7 +68,7 @@ enum cmd
     CMD_RESET             = 0xf0
 };
 
-enum
+typedef enum
 {
     Z_FLAG = 0x8,
     Y_FLAG = 0x4,
@@ -307,6 +308,14 @@ void mlx90393_deinit(struct mlx90393_device *dev);
  * @return the setting status, RT_EOK reprensents  setting the parameter successfully.
  */
 rt_err_t mlx90393_set_param(struct mlx90393_device *dev, enum mlx90393_cmd cmd, rt_uint16_t param);
+
+/* mlx90392 3axes structure */
+struct mlx90393_3axes
+{
+    float x; // x 
+    float y; // y 
+    float z; // z 
+};
 
 /**
 * This function gets the data of the mps, unit: mg
