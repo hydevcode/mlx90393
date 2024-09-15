@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2006-2022, RT-Thread Development Team
+ * Copyright (c) 2006-2024, RT-Thread Development Team
  *
  * SPDX-License-Identifier: Apache-2.0
  *
@@ -8,9 +8,9 @@
  * 2022-02-14     lgnq         the first version
  */
 
-#include "sensor_melexis_mlx90393.h"
+#include "melexis_mlx90393_sensor_v1.h"
 
-#define DBG_TAG "sensor.melexis.mlx90393"
+#define DBG_TAG "melexis.mlx90393.sensor.v1"
 #define DBG_LVL DBG_INFO
 #include <rtdbg.h>
 
